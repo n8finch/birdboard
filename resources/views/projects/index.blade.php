@@ -11,7 +11,9 @@
 
     <ul>
         @foreach ($projects as $project)
-            <li>{{ $project->title }}</li>
+            <li>
+                <a href="{{$project->path()}}"/>{{ $project->title }}</a>
+            </li>
         @endforeach
     </ul>
 </body>
